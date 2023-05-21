@@ -13,6 +13,7 @@
     border-bottom: 2px dashed blue;
 }
 
+/* Distance between two elements is 50px */
 .test-box-1 {
     margin-bottom: 30px;
 }
