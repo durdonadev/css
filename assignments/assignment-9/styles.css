@@ -36,12 +36,12 @@
 }
 
 .top-box-1 {
-    width: calc(((1440px - 20px) / 3) * 2);
+    width: calc(((100% - 20px) / 3) * 2);
     margin-right: 20px;
 }
 
 .top-box-2 {
-    width: calc((1440px - 20px) / 3);
+    width: calc((100% - 20px) / 3);
 }
 
 .bottom-boxes {
@@ -52,7 +52,7 @@
     display: inline-block;
     vertical-align: top;
     height: 497px;
-    width: calc((1440px - 20px) / 2);
+    width: calc((100% - 20px) / 2);
 }
 
 .bottom-box-1 {
