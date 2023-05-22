@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-.root {
+.container {
+    background-color: aliceblue;
     max-width: 1728px;
     height: 1117px;
     padding: 0 144px;
@@ -12,15 +13,8 @@
     font-size: 0px;
 }
 
-.dark-gray {
+nav {
     background-color: #808080;
-}
-
-.light-gray {
-    background-color: #d9d9d9;
-}
-
-.navigation {
     height: 80px;
     margin-bottom: 20px;
 }
@@ -30,18 +24,19 @@
 }
 
 .top-box {
+    background-color: #808080;
     display: inline-block;
     height: 460px;
     vertical-align: top;
 }
 
 .top-box-1 {
-    width: calc(((100% - 20px) / 3) * 2);
+    width: 947px;
     margin-right: 20px;
 }
 
 .top-box-2 {
-    width: calc((100% - 20px) / 3);
+    width: 473px;
 }
 
 .bottom-boxes {
@@ -52,18 +47,24 @@
     display: inline-block;
     vertical-align: top;
     height: 497px;
-    width: calc((100% - 20px) / 2);
+    width: 710px;
 }
 
 .bottom-box-1 {
+    background-color: #d9d9d9;
     padding: 20px 0;
     margin-right: 20px;
 }
 
+.bottom-box-2 {
+    background-color: #808080;
+}
+
 .bottom-inner-box {
+    background-color: #808080;
     display: inline-block;
     height: 457px;
-    width: calc((100% - (19.67px * 2)) / 3);
+    width: 223.33px;
 }
 
 .bottom-inner-box-1,
