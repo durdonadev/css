@@ -1,3 +1,4 @@
+/*
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +7,9 @@
 
 .container {
     background-color: aliceblue;
-    max-width: 1728px;
-    height: 1117px;
-    padding: 0 144px;
+    max-width: 1440px;
+    height: 1024px;
+    padding: 20px;
     margin: 0 auto;
     font-size: 0px;
 }
@@ -20,7 +21,7 @@ nav {
 }
 
 .top-boxes {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .top-box {
@@ -31,7 +32,7 @@ nav {
 }
 
 .top-box-1 {
-    width: 947px;
+    width: 907px;
     margin-right: 20px;
 }
 
@@ -46,28 +47,103 @@ nav {
 .bottom-box {
     display: inline-block;
     vertical-align: top;
-    height: 497px;
-    width: 710px;
+    background-color: #808080;
 }
 
-.bottom-box-1 {
-    background-color: #d9d9d9;
-    padding: 20px 0;
+.bottom-box-left {
+    height: 404px;
+    width: 670px;
+    padding: 20px;
     margin-right: 20px;
 }
 
-.bottom-box-2 {
-    background-color: #808080;
+.bottom-box-right {
+    height: 404px;
+    width: 710px;
 }
 
 .bottom-inner-box {
-    background-color: #808080;
+    background-color: #d9d9d9;
     display: inline-block;
-    height: 457px;
-    width: 223.33px;
+    height: 364px;
+    width: 305px;
 }
 
-.bottom-inner-box-1,
-.bottom-inner-box-2 {
-    margin-right: 19.67px;
+.bottom-inner-box-1 {
+    margin-right: 20px;
+}
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: aliceblue;
+    max-width: 1440px;
+    height: 1024px;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 0px;
+}
+
+nav {
+    background-color: #808080;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.top-boxes {
+    margin-bottom: 20px;
+}
+
+.top-box {
+    background-color: #808080;
+    display: inline-block;
+    height: 460px;
+    vertical-align: top;
+}
+
+.top-box-1 {
+    width: calc((927 * 100%) / 1400 - 20px);
+    margin-right: 20px;
+}
+
+.top-box-2 {
+    width: calc((473 * 100%) / 1400);
+}
+
+.bottom-boxes {
+    margin-bottom: 20px;
+}
+
+.bottom-box {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #808080;
+}
+
+.bottom-box-left {
+    height: 404px;
+    width: calc((690 * 100%) / 1400 - 20px);
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.bottom-box-right {
+    height: 404px;
+    width: calc((710 * 100%) / 1400);
+}
+
+.bottom-inner-box {
+    background-color: #d9d9d9;
+    display: inline-block;
+    height: 364px;
+    width: calc((100% - 20px) / 2);
+}
+
+.bottom-inner-box-1 {
+    margin-right: 20px;
 }

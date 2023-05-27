@@ -1,3 +1,4 @@
+/*
 * {
     margin: 0;
     padding: 0;
@@ -11,14 +12,6 @@
     height: 1024px;
     margin: 0 auto;
     font-size: 0;
-}
-
-.dark-gray {
-    background-color: #808080;
-}
-
-.light-gray {
-    background-color: #d9d9d9;
 }
 
 nav {
@@ -85,6 +78,104 @@ nav {
     display: inline-block;
     height: 294px;
     width: 289px;
+}
+
+.aside-top-box {
+    background-color: #808080;
+    height: 157px;
+    margin-bottom: 30px;
+}
+
+.aside-bottom-box {
+    background-color: #808080;
+    height: 453px;
+}
+
+footer {
+    background-color: #808080;
+    height: 123px;
+    margin-bottom: 30px;
+}
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: aliceblue;
+    padding: 30px;
+    max-width: 1440px;
+    height: 1024px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+nav {
+    background-color: #808080;
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+.content {
+    margin-bottom: 30px;
+}
+
+.content-main {
+    display: inline-block;
+    vertical-align: top;
+    width: calc((100% - 90px) / 4 * 3 + 60px);
+    height: 701px;
+    margin-right: 30px;
+}
+
+.content-aside-box {
+    background-color: #d9d9d9;
+    display: inline-block;
+    vertical-align: top;
+    width: calc((100% - 90px) / 4);
+    height: 701px;
+    padding: 30px;
+}
+
+.main-top-boxes {
+    margin-bottom: 30px;
+}
+
+.main-top-box {
+    background-color: #808080;
+    display: inline-block;
+    vertical-align: top;
+    width: calc((100% - 60px) / 3);
+    height: 317px;
+}
+
+.main-top-box-1,
+.main-top-box-2 {
+    margin-right: 30px;
+}
+
+.main-bottom-box {
+    background-color: #d9d9d9;
+    padding: 30px;
+    height: 354px;
+}
+
+.main-bottom-inner-box-1 {
+    background-color: #808080;
+    display: inline-block;
+    height: 294px;
+    width: calc((100% / 3) * 2);
+    margin-right: 30px;
+}
+
+.main-bottom-inner-box-2 {
+    background-color: #808080;
+    display: inline-block;
+    height: 294px;
+    width: calc((100% / 3) - 30px);
 }
 
 .aside-top-box {
