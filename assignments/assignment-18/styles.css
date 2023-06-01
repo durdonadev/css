@@ -71,10 +71,12 @@ input {
 .social-icons {
     position: fixed;
     right: 20px;
-    bottom: 20px;
+    top: 40%;
 }
 
 .social-icon {
+    display: block;
     width: 32px;
     height: auto;
+    margin-bottom: 4px;
 }
