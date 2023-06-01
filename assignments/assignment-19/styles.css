@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    height: 60px;
+    padding: 20px;
+    border: 1px solid red;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.article {
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.article p {
+    border-top: 1px solid #f00;
+    line-height: 150%;
+}
+
+input {
+    height: 30px;
+}
+
+.email {
+    display: inline-block;
+}
+
+.name {
+    display: inline-block;
+    margin-left: -4px;
+}
