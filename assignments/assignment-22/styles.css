@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #f0f0f0;
+
+    font-size: 0;
+    margin-top: 30px;
+    height: max-content;
+    padding: 30px;
+    width: 600px;
+    margin-bottom: 30px;
+}
+
+/* Part 1 */
+
+.box-1 {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+    width: 200px;
+    height: 200px;
+    background-color: #3d66eb;
+    border-radius: 10px;
+    transition: background-color 1s, transform 1s;
+    cursor: pointer;
+}
+
+.box-1:hover {
+    background-color: #f54242;
+    transform: scale(1.2);
+}
+
+/* Part 2 */
+
+@keyframes move {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    25% {
+        left: 170px;
+        top: 0;
+    }
+    50% {
+        left: 170px;
+        top: 170px;
+    }
+    75% {
+        left: 0px;
+        top: 170px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.box-2 {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+
+    border: 5px solid #3d66eb;
+}
+
+.ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f54242;
+    animation: move 6s ease-in-out;
+}
+
+/* Part 3 */
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.galaxy {
+    position: relative;
+    height: 600px;
+}
+
+.sun {
+    position: absolute;
+    top: 225px;
+    left: 225px;
+
+    border-radius: 50%;
+    background-color: #eed22e;
+    width: 150px;
+    height: 150px;
+    animation: orbit 10s linear infinite;
+}
+
+.earth-orbit {
+    position: absolute;
+    top: -125px;
+    left: -125px;
+
+    border-radius: 50%;
+    border: 2px dotted gray;
+    height: 400px;
+    width: 400px;
+    /* animation: orbit 10s linear infinite; */
+}
+
+.earth {
+    position: absolute;
+    top: -140px;
+    left: 50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1ec15d;
+
+    animation: orbit 4s linear infinite;
+}
+
+.moon-orbit {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+
+    border-radius: 50%;
+    border: 2px dotted gray;
+    height: 100px;
+    width: 100px;
+    /* animation: orbit 5s linear infinite; */
+}
+
+.moon {
+    background-color: #0de8e8;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    /* animation: orbit 5s linear infinite; */
+}
